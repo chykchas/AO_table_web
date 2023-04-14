@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
+    <script src="input.js" defer></script>
 </head>
+
 <body>
-<div>
-    <div>
-        <label for="count1">Количество:</label>
-        <input type="number" id="count1">
-        <label for="price1">Цена:</label>
-        <input type="number" id="price1">
-    </div>
-</div><br>
 
-<div>
-    <div>
-        <label for="count2">Количество:</label>
-        <input type="number" id="count2">
-        <label for="price2">Цена:</label>
-        <input type="number" id="price2">
-    </div>
-</div><br>
+    <form id="form">
+        <div class="item">
+            <label for="count1">Количество:</label>
+            <input type="number" value="0" id="count1" class="count">
+            <label for="price1">Цена:</label>
+            <input type="number" value="0" id="price1" class="price">
+        </div>
+        <br>
 
-<div>
-    <div>
-        <label for="count3">Количество:</label>
-        <input type="number" id="count3">
-        <label for="price3">Цена:</label>
-        <input type="number" id="price3">
-    </div>
-</div><br>
+        <div class="item">
+            <label for="count2">Количество:</label>
+            <input type="number" value="0" id="count2" class="count">
+            <label for="price2">Цена:</label>
+            <input type="number" value="0" id="price2" class="price">
+        </div>
+        <br>
 
-<div>
-    <div>
-        <label for="count4">Количество:</label>
-        <input type="number" id="count4">
-        <label for="price4">Цена:</label>
-        <input type="number" id="price4">
-    </div>
-</div><br>
+        <div class="item">
+            <label for="count3">Количество:</label>
+            <input type="number" value="0" id="count3" class="count">
+            <label for="price3">Цена:</label>
+            <input type="number" value="0" id="price3" class="price">
+        </div>
+        <br>
 
-<div>
-    <label>Итого:</label>
-</div>
+        <div class="item">
+            <label for="count4">Количество:</label>
+            <input type="number" value="0" id="count4" class="count">
+            <label for="price4">Цена:</label>
+            <input type="number" value="0" id="price4" class="price">
+        </div>
+        <br>
+
+        <span id="result">Итого: 0</span>
+    </form>
 
 </body>
 </html>
