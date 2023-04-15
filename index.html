@@ -6,18 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
-    <script src="input.js" defer></script>
+
+    <script src="calculate.js" defer></script>
+    <script src="radio.js" defer></script>
+
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
 
     <form id="form">
+
+        <div id="radio-buttons">
+            <label for="with-focus">
+                C фокусом
+                <input type="radio" name="radio-buttons" id="with-focus" value="1" >
+            </label>
+            <label for="without-focus">
+                <input type="radio" name="radio-buttons" id="without-focus" value="0">
+                Без фокуса
+            </label>
+        </div>
+
         <select name="cashback" id="cashback">
-            <option value="43.5">43.5%</option>
-            <option value="46.5">46.5%</option>
-            <option value="47.9">47.9%</option>
-            <option value="50">50%</option>
+            <option disabled>Не профильный возврат</option>
+            <option class="cashback-value" value="43.5">43.5%</option>
+            <option disabled>Не профильный возврат + дневной бонус</option>
+            <option class="cashback-value" value="46.5">46.5%</option>
+            <option disabled>Профильный возврат</option>
+            <option class="cashback-value" value="47.9">47.9%</option>
+            <option disabled>Профильный возврат + дневной бонус</option>
+            <option class="cashback-value" value="50">50%</option>
         </select>
         <br>
         

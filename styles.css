@@ -1,2 +1,31 @@
 form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+select {
+  width: 73px; /* фиксированная ширина */
+  height: 30px; /* фиксированная высота */
+  background-color: white; /* цвет фона */
+  padding: 5px; /* внутренний отступ */
+  font-size: 14px; /* размер шрифта */
+  border: 1px solid gray; /* рамка */
+  border-radius: 5px; /* скругление углов */
+  text-align: center;
+}
+
+option {
+  padding: 10px; /* внутренний отступ опций */
+  font-size: 16px; /* размер шрифта опций */
+  text-align: center;
+}
+
+#radio-buttons {
+  margin: 10px 0;
+}
+
+#radio-buttons label {
+  display: inline;
 }

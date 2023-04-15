@@ -21,6 +21,6 @@ function calculate() {
         sum += item.count * item.price;
     }
     sum -= sum*cashbackValue
-    result.textContent = `Итого: ${sum}`;
+    result.textContent = `Итого: ${sum.toFixed(2)}`;
 
 }
