@@ -11,8 +11,8 @@ function calculate() {
     
     for (let item of items) {
         data.push({
-            count: parseInt(item.querySelector(".count").value),
-            price: parseInt(item.querySelector(".price").value),
+            count: +item.querySelector(".count").value,
+            price: +item.querySelector(".price").value,
         });
     }
 
