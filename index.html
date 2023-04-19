@@ -9,6 +9,7 @@
 
     <script src="calculate.js" defer></script>
     <script src="radio.js" defer></script>
+    <script src="inputs.js" defer></script>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -39,39 +40,25 @@
             <option class="cashback-value" value="50">50%</option>
         </select>
         <br>
+
+        <button type="button" id="addInputs">Добавить строку</button><br>
         
-        <div class="item">
-            <label for="count1">Количество:</label>
-            <input type="number" id="count1" class="count">
-            <label for="price1">Цена:</label>
-            <input type="number" id="price1" class="price">
+        <div id="components">
+
+            <div id="labels">
+                <label id="quantity">Количество</label>
+                <label id="price">Цена</label>
+            </div>
+
+            <div id="inputs">
+                <div class="material">
+                    <input type="number" id="quantity1" class="quantity">
+                    <input type="number" id="price1" class="price">
+                </div>
+            </div>
+
         </div>
         <br>
-
-        <div class="item">
-            <label for="count2">Количество:</label>
-            <input type="number" id="count2" class="count">
-            <label for="price2">Цена:</label>
-            <input type="number" id="price2" class="price">
-        </div>
-        <br>
-
-        <div class="item">
-            <label for="count3">Количество:</label>
-            <input type="number" id="count3" class="count">
-            <label for="price3">Цена:</label>
-            <input type="number" id="price3" class="price">
-        </div>
-        <br>
-
-        <div class="item">
-            <label for="count4">Количество:</label>
-            <input type="number" id="count4" class="count">
-            <label for="price4">Цена:</label>
-            <input type="number" id="price4" class="price">
-        </div>
-        <br>
-
         <span id="result">Итого: 0</span>
     </form>
 
